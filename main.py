@@ -4,12 +4,14 @@ from click import command
 
 import telebot
 import redis
-
+#todo : ad menu buttons
+#todo : add create state
+#todo : userId (chatId)
 r = redis.Redis(host='localhost', port=6379, decode_responses=True)
 count = r.get('*')
 countLen = 0
 
-bot = telebot.TeleBot('6267587812:AAEOgErtw18ePxGF6mzFw8ceAEYCD9bRUbU')
+bot = telebot.TeleBot('1595573797:Yc8Ad1IrD7NqPj2qSXD6DhIEfJGGlcrj1QnedBQe')
 
 li = []
 a = r.get('list')
